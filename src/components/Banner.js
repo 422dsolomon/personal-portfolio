@@ -49,10 +49,10 @@ export const Banner = () => {
                         <TrackVisibility>
                         {({ isVisible }) =>
                             <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                                <span className="tagline">Welctom to My Portfolio</span>
+                                <span className="tagline">Welcome to My Portfolio</span>
                                 <h1>{`Hi I'm Danny `}<span className="wrap">{text}</span></h1>
                                 <p>My name is Danny Solomon. I am a recent 2023 graduate from Harvard College with a concentration in biomedical engineering. I am passionate about the intersection of health and technology, aiming to utilize innovative technological solutions to advance healthcare. I have proficiency in software engineering, cell culturing, experimental design and digital fabrication, enabling me to tackle complex projects effectively. One of my achievements includes the development of an artificial nose for biosensing, showcasing my ability to translate my skill set into tangible results. As a dedicated student-athlete throughout my four years in college, I have honed my communication, leadership, and teamwork skills. These skills and experiences merge seamlessly with my passion for healthcare technology, allowing me to contribute effectively within this dynamic field.</p>
-                                <button onClick={() => console.log('connect')}>Let's Connect <ArrowRightCircle size = {25}/></button>
+                                <a href = "#connect"><button>Let's Connect <ArrowRightCircle size = {25}/></button></a>
                             </div>}
                         </TrackVisibility>
                     </Col>
