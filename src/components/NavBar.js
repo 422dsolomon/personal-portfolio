@@ -5,6 +5,7 @@ import {useState, useEffect} from "react";
 import logo from '../assets/img/DSLogo.png'
 import navIcon1 from '../assets/img/nav-icon1.svg'
 import navIcon2 from '../assets/img/github-mark-white.png'
+import resume from '../assets/img/Daniel Solomon Resume.pdf'
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -42,6 +43,7 @@ export const NavBar = () => {
             <Nav.Link href="#home" className= {activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
             <Nav.Link href="#skills" className= {activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
             <Nav.Link href="#project" className= {activeLink === 'project' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('project')}>Projects</Nav.Link>
+            <Nav.Link href={resume} download="Daniel Solomon Resume.pdf" className= {activeLink === 'resume-download' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('resume-download')}>Download Resume</Nav.Link>
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
