@@ -7,21 +7,38 @@ import projImg3 from "../assets/img/project-img3.png"
 
 export const Projects = () => {
 
-    const projects = [
+    const projects1 = [
         {
-            title: "business startup",
-            description: " Design & Development",
+            title: "Biosensing Nose",
+            description: " Using sensor fusion with gas sensors to calculate the concentration of a molecule in biological liquids",
             imgURL: projImg1,
+            projURL: "https://github.com/422dsolomon/Artificial_Nose_For_Biochemical_Applications",
         },
         {
-            title: "business startup",
-            description: " Design & Development",
+            title: "AcousticBiosensingGPT",
+            description: " Fine-tuned a ChatGPT with acoustic biosensor information to make the model more useful for acoustic biosensing projects",
             imgURL: projImg2,
+            projURL: "https://github.com/422dsolomon/AcousticBiosensingGPT",
         },
         {
-            title: "business startup",
-            description: " Design & Development",
-            imgURL: projImg3 ,
+            title: "Cortisol Biosensor",
+            description: " Developing device to dyanamically record level of cortisol within the body non-invasively",
+            imgURL: projImg3,
+            projURL: "https://docs.google.com/presentation/d/1mbTiDenAVt0Em48ywY0W6dbDfVX2X0h6iMoeN43k9wU/edit?usp=sharing"
+        },
+    ];
+    const projects2 = [
+        {
+            title: "Home Alone Style Toilet Paper Turret",
+            description: " Integrated software for TP shooter that allows for manual control with buttons, face tracking, and remote control using a webpage",
+            imgURL: projImg3,
+            projURL: "https://fab.cba.mit.edu/classes/863.22/Harvard/week13.html",
+        },
+        {
+            title: "HTM(A)A Website",
+            description: " Website with 14 weeks worth of projects, all teaching principles of digital fabrication",
+            imgURL: projImg3,
+            projURL: "https://fab.cba.mit.edu/classes/863.22/Harvard/people/Daniel/index.html",
         },
     ];
     return (
@@ -30,7 +47,7 @@ export const Projects = () => {
                 <Row>
                     <Col>
                     <h2>Projects</h2>
-                    <p>Need to fill in</p>
+                    <p>Developing complex projects to progress my skills and explore areas that I am passionate about</p>
                     <Tab.Container id="projects-tabs" defaultActiveKey = "first">
                         <Nav variant = "pills" className="nav-pills mb-5 justify-content-center align-items-center" id = "pills-tab">
                             <Nav.Item>
@@ -47,7 +64,7 @@ export const Projects = () => {
                             <Tab.Pane eventKey = "first">
                                 <Row>
                                     {
-                                        projects.map((project,index) => {
+                                        projects1.map((project,index) => {
                                             return (
                                                 <ProjectCard
                                                 key = {index}
@@ -58,8 +75,21 @@ export const Projects = () => {
                                     }
                                 </Row>
                             </Tab.Pane>
-                            <Tab.Pane eventKey = 'second'>filler</Tab.Pane>
-                            <Tab.Pane eventKey = 'third'>filler</Tab.Pane>
+                            <Tab.Pane eventKey = 'second'>
+                                <Row>
+                                    {
+                                        projects2.map((project,index) => {
+                                            return (
+                                                <ProjectCard
+                                                key = {index}
+                                                {...project}
+                                                />
+                                            )
+                                        })
+                                    }
+                                </Row>
+                            </Tab.Pane>
+                            <Tab.Pane eventKey = 'third'></Tab.Pane>
                         </Tab.Content>
                     </Tab.Container>
                     </Col>
