@@ -1,5 +1,5 @@
 # Daniel Solomon's Personal Website
-This is meant to act as Daniel Solomon's personal website. The outline of the website was initially made by following [webdecoded's turoial](https://www.youtube.com/watch?v=hYv6BM2fWd8&t=1468s). The next step is deploying the website using Netlify. You can find the final website at this [web address]
+This is meant to act as Daniel Solomon's personal website. The outline of the website was initially made by following [webdecoded's turoial](https://www.youtube.com/watch?v=hYv6BM2fWd8&t=1468s). The next step is deploying the website using Netlify. You can find the final website at this [web address](https://dsolomon-portfolio.netlify.app/)
 
 ## Available Scripts
 
