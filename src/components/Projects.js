@@ -1,9 +1,12 @@
 import { Container, Row, Col, Nav, Tab} from "react-bootstrap";
 import { ProjectCard } from "./ProjectCards";
 import colorSharp2 from "../assets/img/color-sharp2.png"
-import projImg1 from '../assets/img/project-img1.png'
-import projImg2 from "../assets/img/project-img2.png"
-import projImg3 from "../assets/img/project-img3.png"
+import projImg1 from '../assets/img/WNoseSmaller.jpeg'
+import projImg2 from "../assets/img/GPTLogo.jpeg"
+import projImg3 from "../assets/img/acousticbiosenor.jpeg"
+import projImg4 from "../assets/img/homealone.jpeg"
+import projImg5 from "../assets/img/HTMAA.jpeg"
+
 
 export const Projects = () => {
 
@@ -31,13 +34,13 @@ export const Projects = () => {
         {
             title: "Home Alone Style Toilet Paper Turret",
             description: " Integrated software for TP shooter that allows for manual control with buttons, face tracking, and remote control using a webpage",
-            imgURL: projImg3,
+            imgURL: projImg4,
             projURL: "https://fab.cba.mit.edu/classes/863.22/Harvard/week13.html",
         },
         {
             title: "HTM(A)A Website",
             description: " Website with 14 weeks worth of projects, all teaching principles of digital fabrication",
-            imgURL: projImg3,
+            imgURL: projImg5,
             projURL: "https://fab.cba.mit.edu/classes/863.22/Harvard/people/Daniel/index.html",
         },
     ];

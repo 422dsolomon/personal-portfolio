@@ -2,8 +2,6 @@ import { useState, useEffect} from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import { ArrowRightCircle } from "react-bootstrap-icons"
 import headerImg from "../assets/img/header-img.svg"
-import 'animate.css';
-import TrackVisibility from "react-on-screen";
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -41,22 +39,20 @@ export const Banner = () => {
             setDelta(500);
         }
     }
+
     return (
         <section className="banner" id= "home">
             <Container>
                 <Row className="align-items-center">
                     <Col xs = {12} md = {6} xl ={7}>
-                        <TrackVisibility>
-                        {({ isVisible }) =>
-                            <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                                <span className="tagline">Welcome to My Portfolio</span>
-                                <h1>{`Hi I'm Danny `}<span className="wrap">{text}</span></h1>
-                                <p>My name is Danny Solomon. I am a recent 2023 graduate from Harvard College with a concentration in biomedical engineering. I am passionate about the intersection of health and technology, aiming to utilize innovative technological solutions to advance healthcare. I have proficiency in software engineering, cell culturing, experimental design and digital fabrication, enabling me to tackle complex projects effectively.  
-                                    As a dedicated student-athlete throughout my four years in college, I have honed my communication, leadership, and teamwork skills. 
-                                    These skills and experiences merge seamlessly with my passion for healthcare technology, allowing me to contribute effectively within this dynamic field.</p>
+                        <div >
+                            <span className="tagline">Welcome to My Portfolio</span>
+                            <h1>{`Hi I'm Danny `}<span className="wrap">{text}</span></h1>
+                            <p>My name is Danny Solomon. I am a recent 2023 graduate from Harvard College with a concentration in biomedical engineering. I am passionate about the intersection of health and technology, aiming to utilize innovative technological solutions to advance healthcare. I have proficiency in software engineering, cell culturing, experimental design and digital fabrication, enabling me to tackle complex projects effectively.  
+                                As a dedicated student-athlete throughout my four years in college, I have honed my communication, leadership, and teamwork skills. 
+                                These skills and experiences merge seamlessly with my passion for healthcare technology, allowing me to contribute effectively within this dynamic field.</p>
                                 <a href = "#connect"><button>Let's Connect <ArrowRightCircle size = {25}/></button></a>
-                            </div>}
-                        </TrackVisibility>
+                        </div>
                     </Col>
                     <Col cs = {12} md ={6} xl = {5}>
                         <img src = {headerImg} alt = 'Header Img'></img>
