@@ -6,7 +6,9 @@ import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
-import { MobileNavBar } from './components/MobileNavBar';
+import { MobileNavBar } from './mobilecomponents/MobileNavBar';
+import { MobileBanner} from './mobilecomponents/MobileBanner'
+
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -36,7 +38,12 @@ function App() {
         ) : (
           <NavBar />
       )}
-      <Banner />
+      {isMobile? 
+      (
+        <MobileBanner />
+        ) : (
+          <Banner />
+      )}
       <Skills />
       <Projects />
       <Contact />
