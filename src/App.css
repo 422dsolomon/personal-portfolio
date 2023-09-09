@@ -202,10 +202,59 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
+/* Mobile NavBar */
+.mobile__navbar {
+  border-radius: 50%;
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1rem 2rem;
+}
+
+.mobile__navbar-menu{
+  width: 35px;
+  border-radius: 100%;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile__navbar-menu ul{
+  list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.mobile__navbar-menu ul li{
+  margin: 1rem;
+}
+
+.mobile__navbar-menu ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  transition: all 0.3s ease-in-out;
+}
+
 /* Banner CSS */
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 150px 0 100px 0;
   background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
