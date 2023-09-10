@@ -10,6 +10,7 @@ import { MobileNavBar } from './mobilecomponents/MobileNavBar';
 import { MobileBanner} from './mobilecomponents/MobileBanner'
 import { MobileSkills } from './mobilecomponents/MobileSkills';
 import { MobileProjects } from './mobilecomponents/MobileProjects'
+import { MobileContact } from './mobilecomponents/MobileContact';
 
 
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -58,7 +59,12 @@ function App() {
         ) : (
         <Projects />
       )}
-      <Contact />
+       {isMobile? 
+      (
+        <MobileContact />
+        ) : (
+        <Contact />
+      )}
       <Footer />
     </div>
   );
