@@ -12,7 +12,6 @@ import { MobileSkills } from './mobilecomponents/MobileSkills';
 import { MobileProjects } from './mobilecomponents/MobileProjects'
 import { MobileContact } from './mobilecomponents/MobileContact';
 
-
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
