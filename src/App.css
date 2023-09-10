@@ -247,8 +247,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
-
-  /* transition: all 0.3s ease-in-out; */
 }
 
 /* Banner CSS */
