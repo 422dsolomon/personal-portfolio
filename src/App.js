@@ -58,12 +58,6 @@ function App() {
         ) : (
         <Projects />
       )}
-       {/* {isMobile? 
-      (
-        <MobileContact />
-        ) : (
-        <Contact />
-      )} */}
       <Contact />
       <Footer />
     </div>
