@@ -8,6 +8,8 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { MobileNavBar } from './mobilecomponents/MobileNavBar';
 import { MobileBanner} from './mobilecomponents/MobileBanner'
+import { MobileSkills } from './mobilecomponents/MobileSkills';
+import { MobileProjects } from './mobilecomponents/MobileProjects'
 
 
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -36,16 +38,26 @@ function App() {
       (
         <MobileNavBar />
         ) : (
-          <NavBar />
+        <NavBar />
       )}
       {isMobile? 
       (
         <MobileBanner />
         ) : (
-          <Banner />
+        <Banner />
       )}
-      <Skills />
-      <Projects />
+      {isMobile? 
+      (
+        <MobileSkills />
+        ) : (
+        <Skills />
+      )}
+      {isMobile? 
+      (
+        <MobileProjects />
+        ) : (
+        <Projects />
+      )}
       <Contact />
       <Footer />
     </div>

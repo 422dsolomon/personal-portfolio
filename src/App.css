@@ -392,7 +392,49 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 40%;
   z-index: -4;
 }
-
+/* Mobile Skills Css */
+.mobileskill{
+  padding: 0 0 50px 0;
+  position: relative;
+}
+.mobileskill-bx {
+  background: #151515;
+  border-radius: 84px;
+  text-align: center;
+  padding: 60px 40px;
+  margin-top: -60px;
+}
+.mobileskill h2 {
+	font-size: 40px;
+	font-weight: 500;
+}
+.mobileskill h3 {
+	font-size: 20px;
+	font-weight: 500;
+}
+.mobileskill p {
+    color: #B8B8B8;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+}
+.mobileskill-slider {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.mobileskill-slider .item img {
+  width: 50%;
+  margin: 0 auto 15px auto;
+}
+.mobilebackground-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
 /* Projects Css */
 .project {
   padding: 80px 0;
@@ -518,7 +560,139 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
+/* Mobile Projects Css */
+.mobile-project {
+  padding: 80px 0;
+  position: relative;
+  background-color: black;
+}
+.mobile-project h2 {
+	font-size: 40px;
+	font-weight: 500;
+  text-align: center;
+}
+.mobile-project p {
+  color: #B8B8B8;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 56%;
+}
+.mobile-project .nav.nav-pills {
+  width: 72%;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: rgb(255 255 255 / 10%);
+  overflow: hidden;
+}
+.mobile-project .nav.nav-pills .nav-item {
+  width: 33.33333%;
+}
+.mobile-project .nav.nav-pills .nav-link {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 8px 0;
+  color: #fff;
+  width: 100%;
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  z-index: 0;
+}
+.mobile-project .nav.nav-pills .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+}
+.mobile-project .nav.mobile-nav-pills .nav-link.active::before {
+    width: 100% !important;
+}
+.mobile-project .nav.mobile-nav-pills .nav-link.active {
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+.nav-link#mobile-projects-tabs-tab-first {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 55px 0px 0px 55px;
+}
+.nav-link#mobile-projects-tabs-tab-second {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.nav-link#mobile-projects-tabs-tab-third {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 55px 55px 0;
+}
+.mobile-proj-imgbx {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.mobile-proj-imgbx::before {
+  content: "";
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  opacity: 0.85;
+  position: absolute;
+  width: 30%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+.mobile-proj-imgbx:hover::before {
+  height: 100%;
+}
+.mobile-proj-txtx {
+  position: absolute;
+  text-align: center;
+  width: 30%;
+  line-height: .6em;
+  transition: 0.5s ease-in-out;
+}
+.mobile-proj-imgbx:hover .proj-txtx {
+  top: 50%;
+  opacity: 1;
+}
+.mobile-proj-txtx h4 {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: .8em;
+}
+.mobile-proj-txtx span {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 7px;
+  letter-spacing: 0.8px;
+  line-height: .6em;
+}
 
+.mobile-proj-txtx p {
+  font-weight: 500;
+  font-size: 7px;
+  letter-spacing: 0.8px;
+}
+.background-image-right {
+  top: 20%;
+  position: absolute;
+  bottom: 0;
+  width: 35%;
+  right: 0;
+  z-index: -4;
+}
 /* Contact Css */
 
 .contact {
