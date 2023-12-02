@@ -56,3 +56,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 - React.js
 - HTML5, CSS3, JavaScript
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/422dsolomon/personal-portfolio/blob/main/LICENSE) file for details.
+
