@@ -52,7 +52,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
    ```bash
    npm start
 
-## Technology Used
+## Technologies Used
 
 - React.js
 - HTML5, CSS3, JavaScript
